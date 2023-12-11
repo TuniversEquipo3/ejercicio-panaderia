@@ -68,8 +68,27 @@ $botonStop.addEventListener('click', stopIntervalo);
 renderizarImagen();
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    let button1 = document.querySelector('#volver');
+    let buttonNosotros = document.querySelector('#nosotros');
+    let buttonEstablecimiento = document.querySelector('#establecimiento');
 
-   // Funcion para enrutar a la página principal
-   function enrutamiento1() {
-    window.location.href = 'index.html';
-}
+    // Check if each button exists before adding event listener
+    if (button1) {
+        button1.addEventListener('click', function() {
+            window.location.href = '/index.html';
+        });
+    }
+
+    if (buttonNosotros) {
+        buttonNosotros.addEventListener('click', function() {
+            window.location.href = '/templates/contacto.html';
+        });
+    }
+
+    if (buttonEstablecimiento) {
+        buttonEstablecimiento.addEventListener('click', function() {
+            window.location.href = '/templates/acercade.html';
+        });
+    }
+});

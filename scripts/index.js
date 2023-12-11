@@ -8,8 +8,7 @@ window.onload= function () {
     const IMAGENES= [
         'assets/images/840_560.jpg',
         'assets/images/maxresdefault.jpg',
-        'assets/images/mejor-pan-2.jpg',
-        'assets/images/descarga.jpg'
+        'assets/images/mejor-pan-2.jpg'
     ]
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
     let posicionActual = 0;

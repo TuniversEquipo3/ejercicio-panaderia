@@ -1,41 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+@font-face {
+    font-family: "agbalumo";
+    src: url("/assets/fonts/Agbalumo-Regular.ttf") format(truetype);
 }
-
-nav {
-    background-color: #f9f9f9;
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: agbalumo;
+    /*esto seria la ruta de tu imagen*/
+    background-image: url('/assets/images/pan.jpg');
+    background-repeat: no-repeat; /* Sin esto lo que hace es repetir la imágen si es menor de 800 píxeles */
+    background-position: center center; /* Con estos la centra  */
+    background-attachment: fixed; /* Con estos la centra  */
+    background-size: cover; /* La deja fina fina */
+}
+h1{
+    letter-spacing: 2px; /* c)letter-spacing: deja separación entre letras */
+    margin: 10px;  /* c) Margenes: Controla la distancia entre el contenido y su borde */
     padding: 10px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.7433761205428686) 0%, rgba(55,153,102,0.9969373741041222) 50%, rgba(24,231,9,0.8430912202579683) 100%);
+    border-radius: 2em;
+    box-shadow: 20px 20px 20px black;
 }
-
-nav a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
+h2{
+    color: rgb(0, 0, 0);
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 15ch;
+    animation: typing 2s steps(15), blink .5s infinite step-end alternate; /* Los steps son el número de caracteres */
+    overflow: hidden;
 }
-
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+@keyframes typing {
+    from {width: 0;}
 }
-
-h1 {
-    color: #f9f9f9;
-    background-color: #f2b705;
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine ;
+    width: 50vh;
+    /* Degradiante de color fondo */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.7433761205428686) 0%, rgba(55,153,102,0.9969373741041222) 50%, rgba(24,231,9,0.8430912202579683) 100%);
+    border-radius: 2em;
+    box-shadow: 20px 20px 20px black;
+}
+footer{
+    opacity: .8;
+    margin: 20px;
     padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0;
-}
-
-p {
-    color: #333;
-    line-height: 1.5;
-    text-align: center;
 }

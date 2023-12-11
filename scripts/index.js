@@ -66,3 +66,9 @@ $botonStop.addEventListener('click', stopIntervalo);
 // Iniciar
 renderizarImagen();
 }
+
+
+   // Funcion para enrutar a la página principal
+   function enrutamiento1() {
+    window.location.href = 'index.html';
+}

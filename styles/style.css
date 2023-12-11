@@ -76,3 +76,10 @@ footer{
     width: 1400px;
     
 }
+#avanzar {
+    background-color: bisque;
+}
+
+#retroceder {
+    background-color: bisque;
+}

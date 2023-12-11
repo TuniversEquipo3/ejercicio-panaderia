@@ -60,6 +60,7 @@ footer{
     opacity: .8;
     margin: 20px;
     padding: 10px;
+<<<<<<< HEAD
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -68,4 +69,72 @@ footer{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.7433761205428686) 0%, rgba(55,153,102,0.9969373741041222) 50%, rgba(24,231,9,0.8430912202579683) 100%);
     border-radius: 2em;
     box-shadow: 20px 20px 20px black;
+=======
+    border-radius: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+
+  /* Estilos para el header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+>>>>>>> ddb6d73a026cf6e4b623681ea7d5c68080b9887c
 }

@@ -1,3 +1,8 @@
+/**
+ * @Authors: Laura, Daniel, Ivan, Alejandro, Adrian.
+ * @github: https://github.com/TuniversEquipo3/ejercicio-panaderia
+ */
+
 
 window.onload= function () {
     const IMAGENES= [

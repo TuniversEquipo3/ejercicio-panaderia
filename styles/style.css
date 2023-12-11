@@ -98,9 +98,17 @@ a:hover{
     color: brown;
 }
 #avanzar {
-    background-color: bisque;
+    background-color: white;
+    align-items: center;
+    opacity: .8;
+    color: black;
+    box-shadow: 20px 20px 20px black;
 }
 
 #retroceder {
-    background-color: bisque;
+    background-color: white;
+    align-items: center;
+    opacity: .8;
+    box-shadow: 20px 20px 20px black;
+    color: black;
 }

@@ -6,7 +6,7 @@ Creamos una panaderia que vende pan a gente que le gusta comer pan por el dia y 
 ## Equipo
 Este proyecto está siendo desarrollado por:
 
-- [Nombre del Miembro 1](https://github.com/usuario1) - Rol del Miembro 1
+- [Laura López Alonso](https://github.com/laurity) - Project Manager
 - [Nombre del Miembro 2](https://github.com/usuario2) - Rol del Miembro 2
 - [Alejandro González Corroto ](https://github.com/usuario3) - HTML 5
 - [Adrian Iglesias Riño](https://github.com/Torremolinos) - Tester y multitasking

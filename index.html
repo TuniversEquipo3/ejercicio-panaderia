@@ -2,82 +2,176 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="favicon" href="favicon.ico" type="image/x-ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Panadería Pelayo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="styles/index.css" />
 </head>
 
 <body>
-    <h1>Panaderia Don Pelayo</h1>
-    <header>
-        <h3>Lunes - Sábado / 6:00 - 13:00 | 984 69 52 87</h3>
-        <!-- Contenido del header -->
-    </header>
-    <nav class="head">
-        <a href="#inicio">Inicio</a>
-        <a href="/templates/acercade.html">Nosotros</a>
-        <a href="/templates/contacto.html">Establecimientos</a>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1489836162/smaller_size_logo_wigzr1.png"></img>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#inicio">Inicio</a></li>
+                    <li><a href="/templates/contacto.html">Establecimientos</a></li>
+                    <li><a href="#">Menú</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section id="inicio">
-        <h1>Bienvenido a nuestra Panadería</h1>
-        <br>
-        <div class="carousel">
-            <button id="retroceder">Retroceder</button>
-            <div id="imagen"></div>
-            <button id="avanzar">Avanzar</button>
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel">
+                    <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490170457/apple-and-almond-cake_i12bux.jpg"
+                        class="img-thumbnail" alt="Imagen">
+                    <div class="box">
+                        <h1 id="content1-headline1">Pasteles</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel">
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245951/gluten-free-bread-rolls-nut-free-bread-rolls-pale-pete-recipes-paleo-way-seed-rolls_lthh5a.jpg"
+                            class="img-thumbnail">
+                        <div class="box">
+                            <h1 id="content1-headline2">Sin gluten</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel">
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490245830/Gluten_Free_Bread_6_-_Copy_rtbcqq.jpg"
+                            class="img-thumbnail" alt="Imagen">
+                        <div class="box">
+                            <h1 id="content1-headline3">Pan</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="controles">
-            <button id="play">Play</button>
-            <button id="stop" disabled>Stop</button>
+    </div>
+
+    <div class="container">
+        <div class="row row-eq-height">
+            <div class="col-sm-5 content2">
+                <p id="content2-1">Aquí en The Home Bakery, la panadería es nuestra pasión. ¡Ven y visita - tus papilas
+                    gustativas te lo agradecerán!</p>
+            </div>
+            <div class="col-sm-2">
+                <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490342409/dsc_0114_hgqgai.jpg"
+                    class="img-circle">
+            </div>
+            <div class="col-sm-5 content2">
+                <p id="content2-2">Utilizamos solo los ingredientes más finos y frescos para crear pasteles que
+                    calentarán tu corazón.</p>
+            </div>
         </div>
-       
-        <!-- Contenido de inicio -->
-    </section>
+    </div>
 
+    <div id="carousel" class="carousel slide" data-ride="carousel">
 
-    <br>
-    <h1>Qué nos diferencia</h1>
-    <br>
-    <section class="diferencia">
-        <h2>Innovación</h2>
-        <p>Apostamos por la innovación y el desarrollo de nuevos productos, diferenciales, que destaquen tanto por su
-            sabor y calidad como por su fórmula innovadora. También trabajamos en descubrir productos funcionales que
-            nos ayuden.</p>
-        <h2>Personalización</h2>
-        <p>En nuestros establecimientos personalizamos cualquier tipo de dulce, sobre todo nuestras tartas, en las que
-            incluimos nombres, fotos, objetos de chocolate y todo lo que quieras.</p>
-        <h2>Pedidos a domicilio</h2>
-        <p>Ofrecemos un servicio rápido y seguro para el transporte de nuestros productos al lugar que usted desee.
-            Además, de disponer de un servicio a domicilio para llevarte el pan a casa, también comercializamos nuestros
-            productos por el resto de la provincia.</p>
-    </section>
-    <section id="contacto">
-        <h1 class="contacto">Contacto</h1>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required><br><br>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+        </ol>
 
-    <footer>
-        <p class="contacto">© 1995 Panadería Don Pelayo</p>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490351456/carousel1.jpg">
+                <div class="carousel-caption">
+                    <h3>100% Casero</h3>
+                    <p>Hacemos pasteles en casa utilizando ingredientes 100% naturales</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276719/carousel2_zxje9g.jpg"
+                    alt="Imagen">
+                <div class="carousel-caption">
+                    <h3>Haz tu pedido</h3>
+                    <p>Llámanos y entregaremos pasteles frescos a tu hogar</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276801/carousel3_heh2hy.jpg"
+                    alt="Imagen">
+                <div class="carousel-caption">
+                    <h3>100% Casero</h3>
+                    <p>Hacemos pasteles en casa utilizando ingredientes 100% naturales</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://res.cloudinary.com/dbqqjaqqa/image/upload/v1490276736/carousel4_iuwmrn.jpg"
+                    alt="Imagen">
+                <div class="carousel-caption">
+                    <h3>Haz tu pedido</h3>
+                    <p>Llámanos y entregaremos pasteles frescos a tu hogar</p>
+                </div>
+            </div>
+        </div>
 
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    </div> <!-- -->
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 id="footer1">Comprar en línea</h1>
+                <ul class="footer-links">
+                    <li>Recoge y lleva: recoge en la tienda</li>
+                    <li>Pide productos horneados</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h1 id="footer2">Nuestro menú</h1>
+                <ul class="footer-links">
+                    <li>Explora nuestro menú</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h1 id="footer3">Acerca de nosotros</h1>
+                <ul class="footer-links">
+                    <li>Preguntas frecuentes</li>
+                    <li>Política de la tienda</li>
+                </ul>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="scripts/index.js" type="module"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js'></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

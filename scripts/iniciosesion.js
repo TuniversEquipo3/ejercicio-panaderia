@@ -1,10 +1,16 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
+document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var username = document.getElementById('regUsername').value;
-    var password = document.getElementById('regPassword').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
 
-    localStorage.setItem(username, password);
+    var storedPassword = localStorage.getItem(username);
 
-    alert('Registro exitoso');
+    if(password === storedPassword) {
+        alert('Inicio de sesión exitoso');
+        // Aquí puedes redirigir al usuario a la página principal o a cualquier otra página
+        window.location.href = 'index.html';
+    } else {
+        alert('Error en el inicio de sesión');
+    }
 });

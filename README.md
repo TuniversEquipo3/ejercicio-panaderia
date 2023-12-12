@@ -1,4 +1,4 @@
-# La Panaderia del Mandingo
+# La Panaderia Pelayo
 
 ## Descripción del Proyecto
 Creamos una panaderia que vende pan a gente que le gusta comer pan por el dia y noche.
